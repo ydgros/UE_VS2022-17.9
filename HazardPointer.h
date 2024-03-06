@@ -84,7 +84,7 @@ class FHazardPointerCollection
 
 		std::atomic<uintptr_t> Hazard{ FreeHazardEntry };
 		//ydgro
-		FHazardRecord() = default;
+		public: FHazardRecord() = default;
 
 		inline void* GetHazard() const
 		{
